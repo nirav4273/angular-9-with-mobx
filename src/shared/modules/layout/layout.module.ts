@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {TranslateModule} from '@ngx-translate/core';
-
+import { MobxAngularModule } from 'mobx-angular';
 
 import { HeaderComponent } from 'src/shared/components/header/header.component';
 import { FooterComponent } from 'src/shared/components/footer/footer.component';
@@ -24,7 +24,8 @@ import { LanguageComponent } from 'src/shared/components/language/language.compo
     HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    TranslateModule
+    TranslateModule,
+    MobxAngularModule
   ],
   exports: [
   	HeaderComponent,
@@ -35,7 +36,8 @@ import { LanguageComponent } from 'src/shared/components/language/language.compo
   	HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
-    TranslateModule
+    TranslateModule,
+    MobxAngularModule
   ]
 })
 export class LayoutModule { }

@@ -58,15 +58,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     };
 
     this.loader.setLoader(true);
-    this.authService.login(obj).subscribe((res:any) => {
-      this.loader.setLoader(false);
-      this.user.setLoggedIn();
-      this.storage.set("user", JSON.stringify(res));
-      this.router.navigateByUrl("/");
-    }, err => {
-      console.log(err);
-      this.loader.setLoader(false);
-    })
+    this.authService.login(obj);
   }
 
   ngOnDestroy(){

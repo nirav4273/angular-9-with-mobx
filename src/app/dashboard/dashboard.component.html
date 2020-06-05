@@ -1,8 +1,8 @@
 <div class="container">
-	<div>
+	<div  *mobxAutorun>
 		<table class="table">
 			<tbody>
-				<ng-container *ngFor="let item of list">
+				<ng-container *ngFor="let item of auth.users">
 					<tr>
 						<td>
 							<img src="{{item.avatar}}" />

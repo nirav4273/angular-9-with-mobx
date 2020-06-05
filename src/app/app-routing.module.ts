@@ -6,8 +6,8 @@ const routes: Routes = [
 		path: '',
 		pathMatch: 'full',
 		loadChildren: () => import('src/app/dashboard/dashboard.module').then(m => m.DashboardModule),
-		canActivate: [IsLoginGuard],
-		canLoad: [IsLoginGuard]
+		// canActivate: [IsLoginGuard],
+		// canLoad: [IsLoginGuard]
 	},
 	{
 		path: 'login',
